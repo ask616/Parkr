@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="97px" height="62px" viewBox="0 0 97 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, -19.000000)">
+            <g id="Captions"></g>
+            <g id="Your_Icon" transform="translate(2.000000, 19.000000)" fill="#FFFFFF">
+                <g id="Group">
+                    <path d="M89.558,0 L0,0 L0,3.76 L89.558,3.76 C90.63,3.76 91.763,4.687 91.994,5.651 C92.051,5.816 92.094,5.984 92.094,6.151 L92.094,11.44 L4.907,11.44 L4.907,20.374 L91.885,20.374 L92.043,54.672 C92.043,55.744 90.756,56.417 89.558,56.417 L18.964,56.417 L18.964,61.121 L89.558,61.121 C93.241,61.121 96.228,58.438 96.228,55.128 L96.228,5.993 C96.228,2.683 93.24,0 89.558,0 L89.558,0 Z M89.558,0" id="Shape"></path>
+                    <path d="M14.4899998,43.5740013 L14.4899998,48.2570014 L35.6480007,48.2570014 L35.6480007,43.5740013 L14.4899998,43.5740013 Z M14.4899998,43.5740013" id="Rectangle"></path>
+                    <path d="M10.0010004,30.4700012 L10.0010004,35.1540012 L30.5299997,35.1540012 L30.5299997,30.4700012 L10.0010004,30.4700012 Z M10.0010004,30.4700012" id="Rectangle"></path>
+                    <path d="M64.963,40.572 C64.963,42.437 66.479,43.953 68.344,43.953 L78.912,43.953 C80.779,43.953 82.292,42.437 82.292,40.572 L82.292,34.815 C82.292,32.949 80.779,31.435 78.912,31.435 L68.344,31.435 C66.479,31.435 64.963,32.949 64.963,34.815 L64.963,40.572 L64.963,40.572 Z M64.963,40.572" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

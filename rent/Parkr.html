@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://jliu.me/parkr/rent.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Parkr</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="visible-lg">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-1">
+					<a href="../Parkr.html"><img src="./Parkr_files/parkr.png" width="100px"></a>
+					</div>
+					<div class="col-lg-5">
+						<p style="margin-top:8px"><a href="../Parkr.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#">RENT/BUY</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+					<div class="col-lg-3">
+						<p class="text-right"><button class="login" id="fb-root" onclick="loginNow()" style="display: none;">LOGIN</button></p>
+						<a href="#" onclick="logoutNow()" id="logoutNow" style="">Welcome(Logout)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="visible-sm">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<center><img src="./Parkr_files/parkr.png" width="100px"></center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="application">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+					<div class="inside">
+						<div class="row no-space">
+							<div class="col-lg-6">
+								<div id="get" class="selected">
+									<p class="text-center">BUY</p>
+								</div>
+							</div>
+							<div class="visible-lg">
+								<div class="col-lg-6">
+									<div id="rent">
+										<p class="text-center">RENT</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="renting" style="display: none;">
+									<form name="parking" id="parking" action="Javascript:codeAddress()" method="post">
+										<input id="address" type="text" placeholder="Enter your Address" style="width:80%">
+										<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+									</form><br>
+									<div id="map-canvas" style="width:100%; height:300px;"></div>
+									<div id="outputDiv" style="color:#505050"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="buying">
+									<center>
+										<h1>Zones</h1><br>
+										<p>Zone 1: &lt; 0.25 miles walking distance</p>
+										<p>Zone 2: &lt; 0.5 miles walking distance</p>
+										<p>Zone 3: &lt; 1 miles walking distance</p><br>
+									</center>
+									<!-- <div id="map-canvas1" style="width:100%; height:300px;"></div> -->
+									<center><a href="http://jliu.me/parkr/viewzones.html">View Zones Map</a></center>
+									<br>
+									<select class="zones" onchange="selectedZone()" id="select">
+										<option value="4">Select a Zone</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+                    <!--<div id="paypalButton">
+                      <script src="js/paypal-button.min.js?merchant=9MU4ULRLHNCT8" data-button="buynow" data-name="Zone Ticket" data-quantity="1" data-amount="10.00" data-currency="USD" data-shipping="0" data-tax="0" style="display:none" id="paypal-btn"></script>
+                  </div>!-->
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="visible-lg">
+	<div class="footer1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-lg-offset-1">
+					<p>Created at <a href="http://outsidehacks.com/">Outside Hacks</a>, winner of <a href="http://paypal.com/">Paypal</a> Prize</p>
+				</div>
+				<div class="col-lg-5">
+					<p class="text-right">Copyright Parkr 2013</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="visible-sm">
+	<div class="footer1">
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-offset-1">
+					<p>Created at <a href="http://outsidehacks.com/">Outside Hacks</a>, winner of <a href="http://paypal.com/">Paypal</a> Prize</p>
+				</div>
+				<div class="col-7">
+					<p class="text-right">Copyright Parkr 2013</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script data-rocketsrc="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places" type="text/rocketscript" data-rocketoptimized="true"></script><script type="text/rocketscript" data-rocketsrc="https://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/17/0/%7Bmain,places%7D.js" data-rocketoptimized="true"></script>
+<script data-rocketsrc="https://cdn.firebase.com/v0/firebase.js" type="text/rocketscript" data-rocketoptimized="true"></script><script type="text/javascript" src="./Parkr_files/firebase.js"></script>
+<script data-rocketsrc="http://code.jquery.com/jquery-latest.min.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<script type="text/rocketscript" data-rocketoptimized="true">window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script type="text/rocketscript" data-rocketsrc="js/custom.js" data-rocketoptimized="true"></script>
+<script data-rocketsrc="https://cdn.firebase.com/v0/firebase.js" type="text/rocketscript" data-rocketoptimized="true"></script><script type="text/javascript" src="./Parkr_files/firebase.js"></script>
+<script type="text/rocketscript" data-rocketsrc="https://cdn.firebase.com/v0/firebase-simple-login.js" data-rocketoptimized="true"></script><script type="text/javascript" src="./Parkr_files/firebase-simple-login.js"></script>
+<script data-rocketsrc="js/rentfs.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<script data-rocketsrc="js/start_FINAL.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<script data-rocketsrc="js/view_FINAL.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<script data-rocketsrc="js/paypal-button.min.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+
+
+</body></html>

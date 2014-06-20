@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Parkr</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="http://jliu.me/parkr/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="http://jliu.me/parkr/css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div class="visible-lg">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-1">
+						<a href="http://jliu.me/parkr/#"><img src="./Parkr_files/parkr.png" width="100px"></a>
+					</div>
+					<div class="col-lg-5">
+						<p style="margin-top:8px"><b><a href="#">HOME</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="rent/Parkr.html">RENT/BUY</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+					<div class="col-lg-3">
+						<p class="text-right"><button class="login" id="fb-root" onclick="loginNow()">LOGIN</button></p>
+						<a href="#" onclick="logoutNow()" id="logoutNow" style="display: none;">Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tagline">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1">
+						<div class="texttag" id="rotateHome">
+							<img id="option1Rotate" src="./Parkr_files/outsidelands.png" width="450" style="display: none;">
+							<div id="option2Rotate" style="display: block;">
+								<h1 text-right="">Parking at a touch of a button</h1>
+								<h1>Simple, easy, and secure</h1><br><br>
+								<a href="rent/Parkr.html"><button class="rent">Rent Parking</button></a><a href="rent/Parkr.html"><button class="get">Get Parking</button></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<img src="./Parkr_files/phone.png" width="100%">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="steps">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
+						<h1 class="text-center">How does Parkr work?</h1>
+						<div class="row">
+							<div class="col-lg-4">
+								<center><img src="./Parkr_files/pointer.svg">
+									<h2>Select Parking Spot</h2>
+									<p>Tell us the address of your destination or select a event that you wish to park near. We're featuring parking at Outside Lands!</p></center>
+								</div>
+								<div class="col-lg-4">
+									<center><img src="./Parkr_files/cone.svg">
+										<h2>Make a Zone Choice</h2>
+										<p>Our zoning system gives you the ability to choose between cheaper parking and closer walking distance.</p></center>
+									</div>
+									<div class="col-lg-4">
+										<center><img src="./Parkr_files/pay.svg">
+											<h2>Confirm and Pay</h2>
+											<p>Confirm your parking location and pay for your spot. We'll keep you in touch with the home owner if you need anything.</p></center>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5 col-lg-offset-1">
+									<p>Created at <a href="http://outsidehacks.com/">Outside Hacks</a>, winner of <a href="http://paypal.com/">Paypal</a> Prize</p>
+								</div>
+								<div class="col-lg-5">
+									<p class="text-right">Copyright Parkr 2013</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="visible-sm">
+					<div class="mobile">
+						<div class="header">
+							<div class="row">
+								<center><img src="./Parkr_files/parkr.png" width="150px"></center>
+								<div class="col-lg-6 col-offset-3">
+									<div class="about">
+										<div id="myCarousel" class="carousel slide">
+											
+											<div class="carousel-inner">
+												<div class="active item">
+													<div class="title" style="margin-top:50px">
+														<center><h1>Parkr is AirBnB for Cars</h1>
+															<p>Swipe to learn more &gt;&gt;</p></center>
+														</div>
+													</div>
+													<div class="item">
+														<center>
+															<img src="./Parkr_files/pointerwhite.svg" width="25%">
+															<h1>Select Parking Spot</h1>
+															<p>Tell us the address or select a event that you wish to park in</p>
+														</center>
+													</div>
+													<div class="item">
+														<center>
+															<img src="./Parkr_files/conewhite.svg">
+															<h1>Make Zone Choice</h1>
+															<p>Our zoning system give you the ability to choose between cheaper parking and walking distance.</p>
+														</center>
+													</div>
+													<div class="item">
+														<center>
+															<img src="./Parkr_files/paywhite.svg">
+															<h1>Confirm Parking and Pay</h1>
+															<p>Confirm the address where your parking will be assigned.</p>
+														</center>
+													</div>
+													<div class="item">
+														<center>
+															<img src="./Parkr_files/parkingwhite.svg">
+															<h1>Recieve Parking</h1>
+															<p>You parking spot has just been reserved, and we'll put you in contact with the home owner if you need anything.</p>
+														</center>
+													</div>
+												</div>
+											</div>
+										</div>
+										<center><button class="mbutton" id="fb-roo" onclick="loginNowMobile();">Login Now</button></center>
+										<center><a href="rent/Parkr.html"><button class="mbutton" id="getNowMobile" style="display: none;">Get Parking</button></a></center>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<script data-rocketsrc="http://code.jquery.com/jquery.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+					
+					<script data-rocketsrc="js/bootstrap.min.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+					<script data-rocketsrc="https://cdn.firebase.com/v0/firebase.js" type="text/rocketscript" data-rocketoptimized="true"></script><script type="text/javascript" src="./Parkr_files/firebase.js"></script>
+					<script type="text/rocketscript" data-rocketsrc="https://cdn.firebase.com/v0/firebase-simple-login.js" data-rocketoptimized="true"></script><script type="text/javascript" src="./Parkr_files/firebase-simple-login.js"></script>
+					
+					
+					<script data-rocketsrc="js/jquery.mobile.custom.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+					<script data-rocketsrc="js/login-sc.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+					<script type="text/rocketscript" data-rocketsrc="js/custom.js" data-rocketoptimized="true"></script>
+
+				</body></html>
